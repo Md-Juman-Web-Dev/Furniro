@@ -193,6 +193,8 @@ nav {
   color: #9f9f9f;
   background: #fff;
   padding: 12px 0 13px 30px;
+  border: 0;
+  outline: none;
 }
 .product-box {
   width: 1236px;
