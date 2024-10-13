@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Furniro</title>
+  <!-- GOOGLE FONT  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- FONT AWESOME CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- FAVEICON  -->
+  <link rel="shortcut icon" href="/images/faveicon.png" type="image/x-icon">
+  <!-- LINK CSS  -->
+  <link rel="stylesheet" href="./CSS/cart.css">
 </head>
+
 <body>
-  
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="#">
+          <img src="./images/Frame-168.png" alt="">
+        </a>
+      </div>
+      <ul class="mano-ul row">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="icon-ul row">
+        <li><a href="#"><img src="./images/mdi_account-alert-outline.png" alt=""></a></li>
+        <li><a href="#"><img src="./images/akar-icons_search.png" alt=""></a></li>
+        <li><a href="#"><img src="./images/akar-icons_heart.png" alt=""></a></li>
+        <li><a href="#"><img src="./images/ant-design_shopping-cart-outlined.png" alt=""></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="cover-img">
+        <img src="./images/shop-cover.png" alt="">
+        <div class="shop-text">
+          <div class="cover-logo">
+            <img src="./images/cart-img/cart-cover.png" alt="">
+          </div>
+          <h3>Cart</h3>
+          <div class="row">
+            <p class="h-p">Home</p>
+            <i class="fa-solid fa-angle-right"></i>
+            <p class="s-p">Cart</p>
+          </div>
+        </div>
+      </div>
+      <div class="cart-Totals">
+        <div class="left-side">
+          <ul class="row">
+            <li>Product</li>
+            <li>Price</li>
+            <li>Quantity</li>
+            <li>Subtotal</li>
+          </ul>
+          <div class="p-ditel">
+            <div class="catd-img">
+              <img src="./images/cart-Img/Asgaard.png" alt="">
+            </div>
+            <ul class="Product">
+              <li>Asgaard sofa</li>
+              <li>Rs. 250,000.00</li>
+              <li>1</li>
+              <li>Rs. 250,000.00</li>
+              <li><i class="fa-solid fa-trash"></i></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="right-side">
+          <h5>Cart Totals</h5>
+          <div class="subtotal">
+            <span class="total">Subtotal</span>
+            <span class="price-1">Rs. 250,000.00</span>
+          </div>
+          <div class="total-b">
+            <span class="total">Total</span>
+            <span class="price-2">Rs. 250,000.00</span>
+          </div>
+          <a href="#">Check Out</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
 </body>
+
 </html>
