@@ -208,11 +208,14 @@ nav {
   font-weight: 400;
   font-size: 20px;
   color: #000;
-  border: 1px solid #000;
+  border: 1px solid #b88e2f;
   border-radius: 15px;
   padding: 14px 65px;
 }
-
+.right-side a:hover {
+  background: #b88e2f;
+  color: #fff;
+}
 /* end */
 .support-box {
   padding: 100px 0px;
@@ -276,6 +279,20 @@ nav {
   color: #898989;
 }
 
+.Product li i {
+  color: #b88e2f;
+  font-size: 20px;
+}
+.Product .Quantity {
+  border: 1px solid #9f9f9f;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+.Product .p-name {
+  font-weight: 400;
+  font-size: 16px;
+  color: #9f9f9f;
+}
 /* *FOOTER STYLE STERT  */
 .f-contanier {
   width: 1440px;
