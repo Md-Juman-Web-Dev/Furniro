@@ -697,3 +697,164 @@ nav {
   color: #000000;
 }
 /* *footer end */
+
+.fa-cart-shopping{
+  color: #000;
+  font-size: 20px;
+  margin-top: 5px;
+}
+.fa-cart-shopping:hover{
+  color: #b88e2f;
+}
+
+/* *cart icon click */
+
+html.modal-active,
+body.modal-active {
+  overflow: hidden;
+}
+
+#modal-container {
+  position: fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 1;
+  color: #fff;
+}
+#modal-container .modal-background {
+  display: table-cell;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  vertical-align: middle;
+}
+#modal-container .modal-background .modal {
+  background: #fff;
+  width: 226px;
+  height: 162px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  font-weight: 300;
+  position: relative;
+}
+#modal-container .modal-background .modal h2 {
+  font-size: 25px;
+  line-height: 25px;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  color: #000;
+}
+#modal-container .modal-background .modal p {
+  font-size: 20px;
+  line-height: 22px;
+  color: #000;
+}
+
+#modal-container .modal-background .modal a{
+  color: #b88e2f;
+  font-size: 20px;
+  line-height: 22px;
+  margin-top: 5px;
+  cursor: pointer;
+  z-index: 100;
+}
+#modal-container .modal-background .modal a:hover{
+  text-decoration: underline;
+}
+
+#modal-container .modal-background .modal .modal-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+}
+#modal-container .modal-background .modal .modal-svg rect {
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-dasharray: 778;
+  stroke-dashoffset: 778;
+}
+
+#modal-container.side {
+  transform: scale(1);
+}
+
+#modal-container.side .modal {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  border-radius: 0;
+  transform: scale(1);
+  padding: 0;
+  left: auto;
+}
+
+#modal-container.side .modal .modal-background {
+  transform: scale(1);
+}
+
+#modal-container.side {
+  animation: sideIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.side .modal-background .modal {
+  animation: sideModalIn 0.75s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container.side.out {
+  transform: scale(1);
+  animation: sideOut 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.side.out .modal-background .modal {
+  animation: sideModalOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes sideIn {
+  0% {
+    opacity: 0;
+    background: #fff;
+  }
+  100% {
+    opacity: 1;
+    background: rgba(0 0 0 / 50%);
+  }
+}
+
+@keyframes sideOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1);
+  }
+}
+
+@keyframes sideModalIn {
+  0% {
+    opacity: 0;
+    transform: scale(1) translateX(240px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
+}
+
+@keyframes sideModalOut {
+  100% {
+    transform: translateX(240px);
+  }
+}
