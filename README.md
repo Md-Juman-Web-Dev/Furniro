@@ -1,1 +1,2 @@
-# This Is a Ecommerce website
+# This Is a e-commerce website
+Developers : @Juman and @Sadman
