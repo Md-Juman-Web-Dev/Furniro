@@ -68,6 +68,10 @@ nav {
   width: 28px;
   height: 28px;
 }
+.mano-ul li .mark {
+  color: #b88e2f;
+  border-bottom: 2px solid #b88e2f;
+}
 
 /* *NAV BER IS END  */
 
