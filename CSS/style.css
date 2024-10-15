@@ -170,6 +170,7 @@ nav {
   font-weight: 600;
   line-height: 36px;
   text-align: center;
+  color: #000;
 }
 /* *FAST CARD IS END  */
 .product-box {
@@ -344,7 +345,7 @@ nav {
   background-color: #fcf8f3;
   display: flex;
   align-items: center;
-  margin-bottom: 67px;
+  margin: 37px 0 67px;
 }
 .inner-text {
   width: 566px;
@@ -698,12 +699,12 @@ nav {
 }
 /* *footer end */
 
-.fa-cart-shopping{
+.fa-cart-shopping {
   color: #000;
   font-size: 20px;
   margin-top: 5px;
 }
-.fa-cart-shopping:hover{
+.fa-cart-shopping:hover {
   color: #b88e2f;
 }
 
@@ -757,7 +758,7 @@ body.modal-active {
   color: #000;
 }
 
-#modal-container .modal-background .modal a{
+#modal-container .modal-background .modal a {
   color: #b88e2f;
   font-size: 20px;
   line-height: 22px;
@@ -765,7 +766,7 @@ body.modal-active {
   cursor: pointer;
   z-index: 100;
 }
-#modal-container .modal-background .modal a:hover{
+#modal-container .modal-background .modal a:hover {
   text-decoration: underline;
 }
 

@@ -24,7 +24,7 @@
   <header>
     <nav>
       <div class="logo">
-        <a href="#">
+        <a href="index.html">
           <img src="./images/Frame-168.png" alt="">
         </a>
       </div>
@@ -38,7 +38,22 @@
         <li><a href="#"><img src="./images/mdi_account-alert-outline.png" alt=""></a></li>
         <li><a href="#"><img src="./images/akar-icons_search.png" alt=""></a></li>
         <li><a href="#"><img src="./images/akar-icons_heart.png" alt=""></a></li>
-        <li><a href="cart.html"><img src="./images/ant-design_shopping-cart-outlined.png" alt=""></a></li>
+        <div id="modal-container">
+          <div class="modal-background">
+            <div class="modal">
+              <h2>Shopping Cart</h2>
+              <div style="width: 450px; height: 0; border: 1px solid #ddd; position: absolute; top: 80px; left: 30px;">
+              </div>
+              <p>Cart is empty</p><a href="shop.html">Go To Shop Page</a>
+              
+              <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+                preserveAspectRatio="none">
+                <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <li><a href="#" type="button" onclick="handleClick('side')"><i class="fa-solid fa-cart-shopping"></i></a></li>
       </ul>
     </nav>
   </header>
@@ -359,46 +374,47 @@
       </div>
     </div>
   </main>
-<footer>
-  <div class="f-contanier">
-    <div class="main-footer">
-      <div class="Location">
-        <h4>Funiro.</h4>
-        <div class="l-box">
-          <p>400 University Drive Suite 200 Coral Gables,<br>
-            FL 33134 USA</p>
+  <footer>
+    <div class="f-contanier">
+      <div class="main-footer">
+        <div class="Location">
+          <h4>Funiro.</h4>
+          <div class="l-box">
+            <p>400 University Drive Suite 200 Coral Gables,<br>
+              FL 33134 USA</p>
+          </div>
+        </div>
+        <div class="links-box">
+          <h4>links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="help-box">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Payment Options</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policies</a></li>
+          </ul>
+        </div>
+        <div class="Newsletter-box">
+          <h4>Newsletter</h4>
+          <div class="input-box">
+            <input type="text" placeholder="Enter Your Email Address">
+            <a href="#">SUBSCRIBE</a>
+          </div>
         </div>
       </div>
-      <div class="links-box">
-        <h4>links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="help-box">
-        <h4>Help</h4>
-        <ul>
-          <li><a href="#">Payment Options</a></li>
-          <li><a href="#">Returns</a></li>
-          <li><a href="#">Privacy Policies</a></li>
-        </ul>
-      </div>
-      <div class="Newsletter-box">
-        <h4>Newsletter</h4>
-        <div class="input-box">
-          <input type="text" placeholder="Enter Your Email Address">
-          <a href="#">SUBSCRIBE</a>
-        </div>
+      <div class="copy-right-box">
+        <p>2023 furino. All rights reverved</p>
       </div>
     </div>
-    <div class="copy-right-box">
-      <p>2023 furino. All rights reverved</p>
-    </div>
-  </div>
-</footer>
+  </footer>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

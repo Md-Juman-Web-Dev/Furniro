@@ -147,7 +147,7 @@ nav {
   width: 17px;
 }
 .s-left-side .results {
-  width: 240px;
+  width: 242px;
   height: 37px;
   border-left: 3px solid #9f9f9f;
   padding: 7px 0 6px 34px;
@@ -368,6 +368,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+
 .pages .row .pag-1,
 .pages .row .pag-2,
 .pages .row .pag-3 {
@@ -382,6 +383,9 @@ nav {
   line-height: 60px;
   color: #000;
 }
+.pages .row .pag-1 {
+  color: #fff;
+}
 .pages .row .pag-2,
 .pages .row .pag-3 {
   background-color: #f9f1e7;
@@ -393,6 +397,13 @@ nav {
   background-color: #f9f1e7;
   text-align: center;
   line-height: 60px;
+  color: #000;
+}
+.pages .row .pag-2:hover,
+.pages .row .pag-3:hover,
+.pages .row .next:hover {
+  background-color: #b88e2f;
+  color: #fff;
 }
 .support-box {
   padding: 100px 0px;
